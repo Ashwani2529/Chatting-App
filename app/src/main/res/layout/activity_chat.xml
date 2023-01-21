@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatAct">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_above="@id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100">
+        <EditText
+            android:id="@+id/messagebox"
+            android:hint="Enter Message..."
+            android:layout_weight="89"
+            android:layout_marginLeft="8.5dp"
+            android:background="@drawable/mszboxbackg"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/sentButton"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/send"
+            android:layout_weight="12"/>
+
+    </LinearLayout>
+</RelativeLayout>
